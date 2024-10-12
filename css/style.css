@@ -1,0 +1,164 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Inter", sans-serif;
+  min-height: 100vh;
+  padding: 60px 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+ul,
+li {
+  padding: 0;
+  margin: 0;
+}
+.avatar{
+  padding: 0 0 20px;
+}
+.avatar-wrap{
+  flex-direction: column;
+  gap: 16px;
+}
+.avatar-img{
+  width: 68px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.avatar-content{
+  flex-grow: 1;
+}
+.avatar-content h1{
+  color: #0C0F0C;
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.social-icons{
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+}
+.social-icons a{
+display: inline-block;
+width: 22px;
+}
+.plans-wraper{
+  background-color: #FAFAFA;
+  padding: 12px 8px;
+  border-radius: 6px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+}
+.single-plan{
+  text-align: center;
+}
+.single-plan h2,.date{
+  color: #468F77;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+.single-plan p, .time{
+  color: #8A8F97;
+  font-size: 16px;
+}
+.upcoming{
+  padding: 24px 0;
+}
+.upcoming h2, .saved h2, .visits h2{
+  margin-bottom: 16px;
+  color: #0C0F0C;
+  font-size: 32px;
+  font-weight: 600;
+}
+.date-card{
+  gap: 8px;
+  overflow-x: auto;
+}
+
+.date-single-card{
+  display: block;
+  border: 1px solid #E1E2E1;
+  border-radius: 10px;
+  padding: 16px 48px;
+  text-decoration: none;
+  text-align: center;
+  transition: 0.3s all ease-in-out;
+  
+}
+.date-single-card:hover{
+  background-color: #d9edf7;
+  border-color: #31708f;
+}
+.date-single-card span{
+display: block;
+}
+
+
+.blog-single-card{
+  text-decoration: none;
+  width: 300px;
+  flex: 0 0 auto;
+  margin: 0 10px;
+  
+}
+.blog-single-card span{
+display: block;
+}
+.blog-title{
+  color: #0C0F0C;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 12px 0 4px;
+}
+.blog-des{
+  color: #454745;
+  font-size: 12px;
+}
+.visits{
+  margin-top: 24px;
+}
+
+@media (max-width: 768px) {
+  .avatar-wrap{
+    flex-direction: row;
+  }
+  .social-icons{
+    justify-content: start;
+  }
+  .avatar-content h1{
+    font-size: 20px;
+  }
+
+  .upcoming h2, .saved h2, .visits h2{
+   font-size: 18px;
+
+  }
+  .single-plan h2,.date{
+
+    font-size: 16px;
+   
+  }
+  .single-plan p, .time{
+    font-size: 12px;
+  }
+  .date-single-card{
+    padding: 8px 16px;
+  }
+  .blog-single-card{
+    width: 164px;
+    margin: 0 4px;
+  }
+  
+ 
+}
